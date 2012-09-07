@@ -27,23 +27,94 @@
         </ul>
       </header>
       <section>
-        <h3>Hey! This is Gitshorts.</h3>
+        <h1>Gitshorts</h1>
 
-<p>Hate every day git pull and push stuff? Gitshorts provide a set of commands to help you make your git life easier.</p>
+<p>Hate every day git pull and push stuff?<br>
+Gitshorts provide a set of commands to help you make your git life easier.</p>
 
-<h3>How to Install</h3>
+<h2>How to Install</h2>
 
-<h4>Clone it</h4>
+<h3>Clone it</h3>
 
 <pre><code>$ git clone git://github.com/agate/gitshorts.git
 $ cd gitshorts
 $ ./install
 </code></pre>
 
-<h4>Use Mac and Homebrew?</h4>
+<h3>Use Mac and Homebrew?</h3>
 
 <pre><code>$ brew install gitshorts
 </code></pre>
+
+<h2>Mapping</h2>
+
+<h3>Aliases</h3>
+
+<table>
+<tr>
+<th>Alias</th>
+<th>Origin Command</th>
+</tr>
+<tr>
+<td>ls</td>
+<td>ls-file</td>
+</tr>
+<tr>
+<td>st</td>
+<td>status</td>
+</tr>
+<tr>
+<td>ci</td>
+<td>commit -a</td>
+</tr>
+<tr>
+<td>co</td>
+<td>checkout</td>
+</tr>
+<tr>
+<td>cl</td>
+<td>clone</td>
+</tr>
+<tr>
+<td>rb</td>
+<td>rebase</td>
+</tr>
+<tr>
+<td>ps</td>
+<td>push</td>
+</tr>
+<tr>
+<td>pl</td>
+<td>pull</td>
+</tr>
+<tr>
+<td>rp</td>
+<td>pull --rebase</td>
+</tr>
+<tr>
+<td>df</td>
+<td>diff</td>
+</tr>
+<tr>
+<td>lg</td>
+<td>log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --</td>
+</tr>
+</table><h3>Utils</h3>
+
+<table>
+<tr>
+<th>Command</th>
+<th>What it does</th>
+</tr>
+<tr>
+<td>up</td>
+<td>fetch the latest code from your origin repo. rebase all your branchs.</td>
+</tr>
+<tr>
+<td>sync</td>
+<td>git up; git push</td>
+</tr>
+</table>
       </section>
     </div>
     <footer>
