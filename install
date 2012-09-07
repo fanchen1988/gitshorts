@@ -1,0 +1,12 @@
+#!/bin/bash
+
+GITSHOT_DIR=`pwd`
+
+# Apply Git Config
+ln -s $GITSHOT_DIR/gitconfig ~/.gitconfig
+
+# Add Git Util Commands
+ls $GITSHOT_DIR/bin | while read file;
+do
+  ln -s $GITSHOT_DIR/bin/$file ~/bin/
+done
