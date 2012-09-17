@@ -1,9 +1,13 @@
 #!/bin/bash
 
-git fetch
-
+CURRENT_DIR=`pwd`
+ROOT_DIR=`git rev-parse --show-toplevel`
 CURRENT_BRANCH=`git branch | grep '^\*' | sed 's/^\** *//'`
 BRANCHS=`git branch | sed 's/^\** *//'`
+
+cd $ROOT_DIR
+
+git fetch
 
 for branch in $BRANCHS
 do
@@ -12,3 +16,5 @@ do
 done
 
 git checkout $CURRENT_BRANCH
+
+cd $CURRENT_DIR
