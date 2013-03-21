@@ -34,16 +34,23 @@ Gitshorts provide a set of commands to help you make your git life easier.</p>
 
 <h2>How to Install</h2>
 
-<h3>Clone it</h3>
+<blockquote>
+<p>Make sure you PATH included ~/bin</p>
+</blockquote>
 
-<pre><code>$ git clone git://github.com/agate/gitshorts.git
-$ cd gitshorts
-$ ./install
+<h3>Automatic installer</h3>
+
+<pre><code>$ curl -Lo- https://raw.github.com/agate/gitshorts/master/bootstrap.sh | bash
 </code></pre>
 
-<h3>Use Mac and Homebrew?</h3>
+<h3>Manually</h3>
 
-<pre><code>$ brew install gitshorts
+<pre><code>$ git clone git://github.com/agate/gitshorts.git ~/.gitshorts
+$ cd ~/.gitshorts
+$ mkdir -p ~/bin
+$ ln -s ~/.gitshorts/gitconfig ~/.gitconfig
+$ ln -s ~/.gitshorts/bin/git-sync ~/bin
+$ ln -s ~/.gitshorts/bin/git-up ~/bin
 </code></pre>
 
 <h2>Mapping</h2>
