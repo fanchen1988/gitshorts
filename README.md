@@ -3,18 +3,25 @@ Hate every day git pull and push stuff?
 Gitshorts provide a set of commands to help you make your git life easier.
 
 ## How to Install
-### Clone it
+> Make sure you PATH included ~/bin
+
+### Automatic installer
 ```
-$ git clone git://github.com/agate/gitshorts.git
-$ cd gitshorts
-$ ./install
+$ curl -Lo- https://raw.github.com/agate/gitshorts/master/bootstrap.sh | bash
 ```
-### Use Mac and Homebrew?
+
+### Manually
 ```
-$ brew install gitshorts
+$ git clone git://github.com/agate/gitshorts.git ~/.gitshorts
+$ cd ~/.gitshorts
+$ mkdir -p ~/bin
+$ ln -s ~/.gitshorts/gitconfig ~/.gitconfig
+$ ln -s ~/.gitshorts/bin/git-sync ~/bin
+$ ln -s ~/.gitshorts/bin/git-up ~/bin
 ```
 
 ## Mapping
+
 ###Aliases
  Alias | Origin Command
 -------|----------------

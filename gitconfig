@@ -12,7 +12,7 @@
 [alias]
   b  = branch
   ls = ls-files
-  st = status
+  st = status -s
   ci = commit -a
   co = checkout
   cl = clone
