@@ -9,6 +9,9 @@
 [core]
   editor = vim
   quotepath = false
+  ; autocrlf = true
+[push]
+  default = matching
 [alias]
   b  = branch
   ls = ls-files
