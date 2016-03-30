@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 CURRENT_DIR=`pwd`
 ROOT_DIR=`git rev-parse --show-toplevel`
@@ -13,6 +13,13 @@ for branch in $BRANCHS
 do
   git checkout $branch
   git rebase origin/$branch
+  exit_code=$?
+  if [ $exit_code -eq 0 ]; then
+    echo -e "\e[32m# Rebased branch '$branch'\e[0m"
+  else
+    echo -e "\e[31m# Failed to rebase branch '$branch'\e[0m"
+    exit $exit_code
+  fi
 done
 
 git checkout $CURRENT_BRANCH
