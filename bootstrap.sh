@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPO_URL=git://github.com/agate/gitshorts
+REPO_URL=git://github.com/fanchen1988/gitshorts
 GITSHOT_DIR=${HOME}/.gitshorts
 
 function die() {

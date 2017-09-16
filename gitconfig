@@ -11,7 +11,7 @@
   quotepath = false
   ; autocrlf = true
 [push]
-  default = matching
+  default = simple
 [alias]
   b  = branch
   ls = ls-files

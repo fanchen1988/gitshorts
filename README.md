@@ -7,12 +7,12 @@ Gitshorts provide a set of commands to help you make your git life easier.
 
 ### Automatic installer
 ```
-$ curl -Lo- https://raw.github.com/agate/gitshorts/master/bootstrap.sh | bash
+$ curl -Lo- https://raw.github.com/fanchen1988/gitshorts/master/bootstrap.sh | bash
 ```
 
 ### Manually
 ```
-$ git clone git://github.com/agate/gitshorts.git ~/.gitshorts
+$ git clone git://github.com/fanchen1988/gitshorts.git ~/.gitshorts
 $ cd ~/.gitshorts
 $ mkdir -p ~/bin
 $ ln -s ~/.gitshorts/gitconfig ~/.gitconfig
